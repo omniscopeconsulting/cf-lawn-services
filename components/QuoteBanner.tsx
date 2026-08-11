@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function QuoteBanner(){return <section className="bg-[#65c82e] py-12"><div className="container flex flex-col items-start justify-between gap-6 md:flex-row md:items-center"><div><h2 className="display text-3xl text-[#101510]">Ready for a better looking lawn?</h2><p className="mt-2 text-[#19330e]">Tell us what your property needs and get a personalized quote.</p></div><Link href="/contact#quote" className="btn bg-[#111411] text-white">Get a Free Quote <span aria-hidden>→</span></Link></div></section>}

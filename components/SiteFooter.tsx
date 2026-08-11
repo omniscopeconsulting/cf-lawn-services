@@ -1,0 +1,5 @@
+import Link from "next/link";
+
+export default function SiteFooter() {
+  return <><footer className="bg-[#0b0e0b] pb-24 pt-12 text-white md:pb-12"><div className="container flex flex-col justify-between gap-8 sm:flex-row"><div><p className="display text-xl">CF <span className="text-[#65c82e]">LAWN SERVICES</span></p><p className="mt-3 text-sm text-white/55">Lake Dallas, Texas &nbsp;•&nbsp; <a href="tel:9404532471">940-453-2471</a></p></div><div className="text-sm text-white/55"><a href="https://www.facebook.com/people/Cade-Foxx/61579702435793/" target="_blank" rel="noreferrer" className="hover:text-white">Facebook</a><p className="mt-3">© {new Date().getFullYear()} CF Lawn Services. All rights reserved.</p></div></div></footer><div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 gap-2 border-t border-gray-200 bg-white p-2 shadow-2xl md:hidden"><a href="tel:9404532471" className="btn bg-[#172018] text-white">Call Now</a><Link href="/contact#quote" className="btn btn-green">Get Quote</Link></div></>;
+}
