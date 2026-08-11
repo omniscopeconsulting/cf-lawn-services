@@ -5,10 +5,10 @@ import { useEffect, useRef, useState } from "react";
 import type { MouseEvent } from "react";
 
 const photos = [
-  { src: "/images/lawn-wide.png", alt: "Freshly mowed green front lawn", className: "md:col-span-2 md:row-span-2" },
-  { src: "/images/lawn-care.png", alt: "CF Lawn Services maintaining a residential lawn", className: "" },
-  { src: "/images/lake-sunset.png", alt: "Lake Cities neighborhood at sunset", className: "" },
-  { src: "/images/lawn-close.png", alt: "Healthy green lawn after service", className: "md:col-span-2" },
+  { src: "/images/lawn-wide.svg", alt: "Freshly mowed green front lawn", className: "md:col-span-2 md:row-span-2" },
+  { src: "/images/lawn-care.svg", alt: "CF Lawn Services maintaining a residential lawn", className: "" },
+  { src: "/images/lake-sunset.svg", alt: "Lake Cities neighborhood at sunset", className: "" },
+  { src: "/images/lawn-close.svg", alt: "Healthy green lawn after service", className: "md:col-span-2" },
 ];
 
 export default function Gallery() {

@@ -28,6 +28,6 @@ If Vercel reports that no Next.js version was detected, reset the project&apos;s
 
 No environment variables, database, or backend services are required. The quote form creates a pre-filled SMS on the visitor's device.
 
-The image binaries are intentionally not stored in this repository. Before running or deploying the site, upload the six required files listed in [`public/images/README.md`](public/images/README.md) to `public/images/` without renaming them.
+The repository includes lightweight SVG artwork for every image reference, so the site renders without any missing assets. See [`public/images/README.md`](public/images/README.md) for the asset map and replacement guidance.
 
 The production metadata currently uses `https://cflawnservices.com`. If the final domain differs, update `metadataBase`, Open Graph URL, structured-data URL, sitemap URL, and robots sitemap in `app/`.

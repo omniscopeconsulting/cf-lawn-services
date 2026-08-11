@@ -18,6 +18,14 @@ const requiredScripts = {
   build: "next build",
   start: "next start",
 };
+const requiredImages = [
+  "public/images/cade-fox.svg",
+  "public/images/lake-sunset.svg",
+  "public/images/lawn-care.svg",
+  "public/images/lawn-close.svg",
+  "public/images/lawn-wide.svg",
+  "public/images/logo.svg",
+];
 
 for (const dependency of requiredDependencies) {
   if (!packageJson.dependencies?.[dependency] && !packageJson.devDependencies?.[dependency]) {
@@ -31,4 +39,6 @@ for (const [name, command] of Object.entries(requiredScripts)) {
   }
 }
 
-console.log("Next.js project structure verified. Add the required image assets listed in public/images/README.md before deployment.");
+await Promise.all(requiredImages.map((path) => access(path, constants.R_OK)));
+
+console.log(`Next.js project structure and ${requiredImages.length} image assets verified.`);

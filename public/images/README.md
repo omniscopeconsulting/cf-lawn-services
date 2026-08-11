@@ -1,12 +1,12 @@
-# Required website images
+# Website images
 
-Binary assets are intentionally excluded from the repository so code-only pull requests remain supported. Before running or deploying the website, upload these files into this directory using the exact filenames shown:
+The website ships with lightweight, text-based SVG artwork so every image section works immediately without binary files in the pull request:
 
-- `cade-fox.png` — owner portrait used on the About page and homepage.
-- `lake-sunset.png` — Lake Cities sunset photograph used in the gallery and Gallery page hero.
-- `lawn-care.png` — lawn-service photograph used on the homepage and gallery.
-- `lawn-close.png` — close-up lawn photograph used in the gallery.
-- `lawn-wide.png` — primary lawn photograph used for page heroes, social sharing, and the gallery.
-- `logo.jpg` — CF Lawn Services logo used in the header and as the site icon.
+- `cade-fox.svg` — owner artwork used on the About page and homepage.
+- `lake-sunset.svg` — Lake Cities sunset artwork used in the gallery and Gallery page hero.
+- `lawn-care.svg` — lawn-service artwork used on the homepage and gallery.
+- `lawn-close.svg` — close-up lawn artwork used in the gallery.
+- `lawn-wide.svg` — primary lawn artwork used for page heroes, social sharing, and the gallery.
+- `logo.svg` — CF Lawn Services logo used in the header and as the site icon.
 
-The application expects these assets at `/public/images/`, which Next.js serves at `/images/`.
+Next.js serves files in this directory at `/images/`. These SVGs can later be replaced by optimized business photography while keeping the same filenames, or the source paths can be updated to point to new assets.

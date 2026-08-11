@@ -21,7 +21,7 @@ export default function Header() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#0d100d]/95 text-white backdrop-blur-xl">
       <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-3" aria-label="CF Lawn Services home">
-          <Image src="/images/logo.jpg" alt="CF Lawn Services logo" width={60} height={60} className="h-14 w-14 rounded-lg bg-white object-contain" priority />
+          <Image src="/images/logo.svg" alt="CF Lawn Services logo" width={60} height={60} className="h-14 w-14 rounded-lg bg-white object-contain" priority />
           <span className="display hidden text-lg leading-none sm:block">CF LAWN<br /><span className="text-[#65c82e]">SERVICES</span></span>
         </Link>
         <nav className="hidden items-center gap-7 md:flex" aria-label="Main navigation">
